@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        
+        <div class="taxt"><h3>@justMHAMMED</h3></div>
+        <div class="nav">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">Join</a></div>
+            
+        </div>
+    </header>
+
+    <section class="ditel">
+
+        <div><p>START FOR FREE</p></div>
+        <div ><h1>Crete new account<span>.</span></h1></div>
+        <div><p>Already A Member?<a href="#">Log in</a></p></div>
+
+    </section>
+
+    <section class="log">
+        <form>
+            <div class="body">
+            <div class="first">
+                <div class="name"><label>First Name</label><i class="fa-solid fa-address-card" id="icone"></i></div>
+            <div class="grond"><input type="text"></div>
+            </div>
+            <div class="first">
+                <div class="name"><label>Last Name</label><i class="fa-solid fa-address-card" id="icone"></i></div>
+                <div class="grond"> <input type="text"></div>
+            </div>
+            </div>
+            <div class="emil">
+                <div class="name"><label>Email</label><i class="fa-solid fa-envelope" id="icone-1" ></i></div>
+                <div class="grond"><input type="email" required></div>
+            </div>
+                <div class="password">
+                    <div class="name"><label>Password (8 characters maximum)</label><span  class="eye"onclick="myFunction()"><i class="fa-solid fa-eye" id="icone-2"></i><i class="fa-solid fa-eye-slash" id="icone-3"></i></span></div>
+                    <div class="grond"><input type="password"  id="myInput" type="password" name="password" maxlength="8"></div>
+                </div>
+                <div class="buttons">
+
+                    <button class="bu-color2">Change method</button>
+                    <button >Create account</button>
+
+                </div>
+                
+           
+                
+        </form>
+
+        
+
+    </section>
+
+    
+  <script>
+    function myFunction(){
+      var x = document.getElementById("myInput");
+      var y = document.getElementById("icone-2");
+      var z = document.getElementById("icone-3");
+      if(x.type === 'password'){
+        x.type = "text";
+        y.style.display = "block";
+        z.style.display = "none";
+
+      }
+      else{
+        x.type = "password";
+        y.style.display = "none";
+        z.style.display = "block";
+
+      }
+      
+    }
+
+  </script>
+
+
+</body>
+</html>
